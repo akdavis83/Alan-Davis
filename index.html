@@ -138,6 +138,41 @@
     text-align: left;
   }
 }
+.button {
+  position: relative;
+  background-color: blue;
+  border: none;
+  border-radius: 50%;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
 
     </style>
 
@@ -196,6 +231,8 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum incidunt assumenda neque quisquam obcaecati officia consequatur, voluptate mollitia? Sed cum tempore harum quia in, numquam at deleniti nesciunt odio eaque?
             </p>
             <img src="allinx.jpg" alt="AllIn">
+            <br>
+            <a href="testimony.html"><button class="button">Testimony</button></a>
             <br>
             <br>
             <br>
